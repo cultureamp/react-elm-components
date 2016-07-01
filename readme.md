@@ -1,6 +1,6 @@
 # react-elm
 
-If you want to use Elm at work, you *must* introduce it gradually. Every company I know that uses Elm started by converting a single component as a test.
+If you want to use [Elm](http://elm-lang.org/) at work, you *must* introduce it gradually. Every company I know of that uses Elm in production started by converting a single component.
 
 This library makes this kind of low-risk exploration super easy!
 
@@ -18,6 +18,8 @@ function render()
 	return <Elm src={Todo} />
 }
 ```
+
+Check out the `examples/` directory of this repo to see this in action.
 
 
 ## Flags
