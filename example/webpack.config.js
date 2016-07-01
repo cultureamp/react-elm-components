@@ -17,6 +17,7 @@ var config = {
       {
         test : /\.jsx?/,
         include : APP_DIR,
+        exclude: [/elm-stuff/, /node_modules/],
         loader : 'babel'
       },
       {
