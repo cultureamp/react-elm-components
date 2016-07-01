@@ -13,29 +13,31 @@ This library makes this low-risk exploration as easy as possible.
 After you have compiled an Elm program to JavaScript, you can embed it in React like this:
 
 ```javascript
-import ElmComponent from 'react-elm'
-import Elm from '../dist/elm/my-thing.js'
+import Elm from 'react-elm'
+import { Todo } from '../dist/elm/todomvc.js'
 
 function render()
 {
-  return <Elm src={Elm.MyThing} />
+  return <Elm src={Todo} />
 }
 ```
 
-If you have a program with flags, you can provide them like this:
+You configure an Elm program with *flags*. For example, if your `Todo` module needed to be configured with an array of todos, you would write something like this:
 
 ```javascript
-<Elm src={Elm.MyThing} flags={{ userId: 42, userName: 'Tom' }} />
+<Elm src={Todo} flags={{ todos: ["Get Milk", "Do Laundry"] }} />
 ```
 
-If you have ports, you pass in a function to set them all up like normal:
+You communicate with Elm by sending messages through *ports*. Think of these as holes in the side of an Elm program that you can pass information though. So maybe we extend our `Todo` app to allow outsiders to send in new tasks through the `todos` port. And maybe we also expose `numPendingTodos` so that the outsider can know how much work you have left. You would set it up like this:
 
 ```javascript
-<Elm src={Elm.MyThing} ports={initPorts} />
+<Elm src={Todo} ports={initPorts} />
 
 function initPorts(ports)
 {
-	ports.stocks.send(1234);
-	ports.buy.subscribe(function(stock) {});
+	ports.todos.send("Invent the Universe");
+	ports.todos.send("Bake an Apple Pie");
+
+	ports.numPendingTodos.subscribe(function(n) { ... });
 }
 ```
