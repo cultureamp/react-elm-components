@@ -4,6 +4,7 @@
     "make": "babel --plugins transform-react-jsx js/app.jsx | uglifyjs -o build.min.js"
   },
   "dependencies": {
+    "emojione-picker": "^0.3.6",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "react-elm": "^1.0.0"
