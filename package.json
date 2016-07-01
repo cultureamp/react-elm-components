@@ -1,0 +1,23 @@
+{
+  "name": "react-elm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evancz/react-elm.git"
+  },
+  "peerDependencies": {
+    "react": ">=0.14.0",
+    "react-dom": ">=0.14.0"
+  },
+  "author": "Evan Czaplicki <info@elm-lang.org> (http://elm-lang.org/)",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/evancz/react-elm/issues"
+  },
+  "homepage": "https://github.com/evancz/react-elm"
+}
