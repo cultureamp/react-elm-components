@@ -2,7 +2,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var EmojiPicker = require('emojione-picker');
 var Elm = require('react-elm');
-var Chat = require('./Chat');
+var { Chat } = require('./Chat');
 
 var EmojiChatRoom = React.createClass({
 
@@ -11,7 +11,7 @@ var EmojiChatRoom = React.createClass({
 
     return (
       <div className="chat">
-      <Elm src={Chat} flags={flags} ports={this.setupPorts} />
+        <Elm src={Chat} flags={flags} ports={this.setupPorts} />
         <EmojiPicker onChange={this.sendEmojiToChat} />
       </div>
     );

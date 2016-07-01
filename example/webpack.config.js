@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 var path = require('path');
 
-var BUILD_DIR = path.resolve(__dirname, 'public');
+var BUILD_DIR = path.resolve(__dirname, 'build');
 var APP_DIR = path.resolve(__dirname);
 
 var config = {
@@ -19,6 +19,10 @@ var config = {
         include : APP_DIR,
         exclude: [/elm-stuff/, /node_modules/],
         loader : 'babel'
+      },
+      {
+        test: /\.html$/,
+        loader: "html"
       },
       {
         test: /\.elm$/,
