@@ -25,13 +25,20 @@ function render()
 You configure an Elm program with *flags*. For example, if your `Todo` module needed to be configured with an array of todos, you would write something like this:
 
 ```javascript
-<Elm src={Todo} flags={{ todos: ["Get Milk", "Do Laundry"] }} />
+function render()
+{
+  var flags = { todos: ["Get Milk", "Do Laundry"] };
+  return <Elm src={Todo} flags={flags} />
+}
 ```
 
 You communicate with Elm by sending messages through *ports*. Think of these as holes in the side of an Elm program that you can pass information though. So maybe we extend our `Todo` app to allow outsiders to send in new tasks through the `todos` port. And maybe we also expose `numPendingTodos` so that the outsider can know how much work you have left. You would set it up like this:
 
 ```javascript
-<Elm src={Todo} ports={initPorts} />
+function render()
+{
+  return <Elm src={Todo} ports={initPorts} />
+}
 
 function initPorts(ports)
 {
