@@ -6,7 +6,13 @@ var APP_DIR = path.resolve(__dirname);
 
 var config = {
   entry: APP_DIR + '/index.jsx',
-   module : {
+
+  resolve: {
+    modulesDirectories: ['node_modules'],
+    extensions: ['', '.js', '.elm']
+  },
+
+  module : {
     loaders : [
       {
         test : /\.jsx?/,
@@ -18,7 +24,9 @@ var config = {
         exclude: [/elm-stuff/, /node_modules/],
         loader: 'elm-webpack'
       }
-    ]
+    ],
+
+    noParse: /\.elm$/
   },
   output: {
     path: BUILD_DIR,
