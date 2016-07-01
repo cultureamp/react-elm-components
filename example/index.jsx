@@ -27,5 +27,5 @@ var EmojiChatRoom = React.createClass({
 
 ReactDOM.render(
   <EmojiChatRoom />,
-  document.getElementById('chat');
+  document.getElementById('chat')
 );
