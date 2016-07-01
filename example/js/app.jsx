@@ -6,26 +6,26 @@ var Chat = require('../dist/elm-chat.js');
 
 var EmojiChatRoom = React.createClass({
 
-	render: function() {
-		var flags = 'wss://echo.websocket.org';
+  render: function() {
+    var flags = 'wss://echo.websocket.org';
 
-		return (
-			<div class="chat">
-				<Elm src={Chat} flags={flags} ports={this.setupPorts} />
-				<EmojiPicker onChange={this.sendEmojiToChat} />
-			</div>
-		);
-	},
+    return (
+      <div class="chat">
+        <Elm src={Chat} flags={flags} ports={this.setupPorts} />
+        <EmojiPicker onChange={this.sendEmojiToChat} />
+      </div>
+    );
+  },
 
-	sendEmojiToChat: function(emoji) {},
+  sendEmojiToChat: function(emoji) {},
 
-	setupPorts: function(ports) {
-		this.sendEmojiToChat = ports.emoji.send;
-	},
+  setupPorts: function(ports) {
+    this.sendEmojiToChat = ports.emoji.send;
+  },
 
 });
 
 ReactDOM.render(
-	<EmojiChatRoom />,
-	document.getElementById('chat');
+  <EmojiChatRoom />,
+  document.getElementById('chat');
 );
