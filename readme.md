@@ -18,7 +18,7 @@ import { Todo } from '../dist/elm/todomvc.js'
 
 function render()
 {
-  return <Elm src={Todo} />
+	return <Elm src={Todo} />
 }
 ```
 
@@ -27,8 +27,8 @@ You configure an Elm program with *flags*. For example, if your `Todo` module ne
 ```javascript
 function render()
 {
-  var flags = { todos: ["Get Milk", "Do Laundry"] };
-  return <Elm src={Todo} flags={flags} />
+	var flags = { todos: ["Get Milk", "Do Laundry"] };
+	return <Elm src={Todo} flags={flags} />
 }
 ```
 
@@ -37,7 +37,7 @@ You communicate with Elm by sending messages through *ports*. Think of these as 
 ```javascript
 function render()
 {
-  return <Elm src={Todo} ports={initPorts} />
+	return <Elm src={Todo} ports={initPorts} />
 }
 
 function initPorts(ports)
