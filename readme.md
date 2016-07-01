@@ -71,3 +71,15 @@ function initPorts(ports)
 In the `initPorts` function, we first subscribe to the `numActiveTodos` port. Whenever the number of active todos changes, we will run that function and log the number on the console. After that, we send two values through the `todos` port. This will add both of these into the model *and* trigger the `numActiveTodos` callback twice.
 
 **Note:** Once the `ports` function has been used to initialize the component, it will never be used again. Providing a new function does nothing. If you want to change your ports, you should save the `ports` object into your `state` so you can mess with it later.
+
+
+## Embedding Elm in other Frameworks
+
+For all the folks who use Angular or Ember or whatever else, you can use exactly the same strategy to introduce Elm. Check out [the implementation](index.js) of this package. It is a very thin wrapper that basically runs the following program at the correct time:
+
+```javascript
+var app = Elm.Todo.embed(node, flags);
+setup(app.ports)
+```
+
+So if you are interested in using Elm with Angular or Ember, do the same trick we do here!
