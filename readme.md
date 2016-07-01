@@ -19,7 +19,7 @@ function render()
 }
 ```
 
-Check out the `examples/` directory of this repo to see this in action.
+Check out the `example/` directory of this repo to see this in action.
 
 
 ## Flags

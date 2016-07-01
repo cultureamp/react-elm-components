@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "make": "babel --plugins transform-react-jsx js/app.jsx | uglifyjs -o build.min.js"
+  },
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-elm": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babel-plugin-uglify": "^1.0.2",
+    "uglify-js": "^2.6.4"
+  }
+}
