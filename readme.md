@@ -13,8 +13,7 @@ After you have compiled an Elm program to JavaScript, you can embed it in React 
 import Elm from 'react-elm'
 import { Todo } from '../dist/elm/todomvc.js'
 
-function render()
-{
+function render() {
 	return <Elm src={Todo} />
 }
 ```
@@ -30,8 +29,7 @@ Sometimes you want to give your Elm program some **flags** on start up. For exam
 import Elm from 'react-elm'
 import { Todo } from '../dist/elm/todomvc.js'
 
-function render()
-{
+function render() {
 	var flags = { todos: ["Get Milk", "Do Laundry"] };
 	return <Elm src={Todo} flags={flags} />
 }
@@ -52,13 +50,11 @@ So maybe we extend our `Todo` app to allow outsiders to register new tasks throu
 import Elm from 'react-elm'
 import { Todo } from '../dist/elm/todomvc.js'
 
-function render()
-{
+function render() {
 	return <Elm src={Todo} ports={initPorts} />
 }
 
-function initPorts(ports)
-{
+function initPorts(ports) {
 	ports.numActiveTodos.subscribe(function(n) {
 		console.log(n);
 	});
