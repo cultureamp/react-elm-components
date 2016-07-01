@@ -11,8 +11,7 @@
     "url": "https://github.com/evancz/react-elm.git"
   },
   "peerDependencies": {
-    "react": ">=0.14.0",
-    "react-dom": ">=0.14.0"
+    "react": ">=0.14.0"
   },
   "author": "Evan Czaplicki <info@elm-lang.org> (http://elm-lang.org/)",
   "license": "BSD-3-Clause",
