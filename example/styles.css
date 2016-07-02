@@ -12,9 +12,10 @@
 
 .chat-container {
   background-color: rgb(245, 247, 249);
-  margin-top: 20px;
+  margin-top: 40px;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 2px 15px rgba(0,0,0,0.1);
   font-size: 24px;
+  font-family: helvetica, arial, sans-serif;
 }
 
 .chat-container button {
@@ -32,6 +33,7 @@
 
 .chat-message-input {
   font-size: inherit;
+  font-family: inherit;
   width: 165px;
   vertical-align: bottom;
   border: 1px solid lightgray;
