@@ -1,0 +1,53 @@
+#chat {
+  width: 400px;
+  margin: 40px auto;
+  padding: 100px;
+  background-color: rgb(92, 181, 205);
+}
+
+.emoji-chat {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.chat-container {
+  background-color: rgb(245, 247, 249);
+  margin-top: 20px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 2px 15px rgba(0,0,0,0.1);
+  font-size: 24px;
+}
+
+.chat-container button {
+  background-color: rgb(49, 70, 91);
+  color: white;
+  padding: 10px;
+  border: 0;
+  font-family: monospace;
+  margin-left: 20px;
+}
+
+.chat-container button:hover {
+  background-color: black;
+}
+
+.chat-message-input {
+  font-size: inherit;
+  width: 165px;
+  vertical-align: bottom;
+  border: 1px solid lightgray;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.chat-messages {
+  font-size: inherit;
+  background-color: white;
+  margin-top: 20px;
+  border-top: 1px solid lightgray;
+  min-height: 1em;
+}
+
+.chat-messages > div {
+  padding: 5px 10px;
+  border-bottom: 1px solid lightgray;
+}

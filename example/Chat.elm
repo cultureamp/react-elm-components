@@ -86,10 +86,10 @@ subscriptions { server } =
 
 view : Model -> Html Msg
 view model =
-    div []
-        [ input [ onInput Input, value model.input ] []
+    div [ class "chat-container" ]
+        [ input [ class "chat-message-input", onInput Input, value model.input ] []
         , button [ onClick Send ] [ text "Send" ]
-        , div [] (List.map viewMessage (List.reverse model.messages))
+        , div [ class "chat-messages" ] (List.map viewMessage (List.reverse model.messages))
         ]
 
 

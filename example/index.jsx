@@ -23,8 +23,8 @@ const EmojiChatRoom = React.createClass({
 
     return (
       <div className="emoji-chat">
-        <Elm src={Chat} flags={flags} ports={setupPorts} />
         <EmojiPicker onChange={handleChange} />
+        <Elm src={Chat} flags={flags} ports={setupPorts} />
       </div>
     );
   }
