@@ -5,7 +5,5 @@ From the `example/` directory, run the following commands:
 
 ```bash
 npm install
-npm run make
+npm run serve
 ```
-
-Then open `index.html` in your browser.
