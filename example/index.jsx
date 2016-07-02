@@ -1,22 +1,22 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var EmojiPicker = require('emojione-picker');
-var Elm = require('react-elm');
-var { Chat } = require('./Chat');
+const React = require('react');
+const ReactDOM = require('react-dom');
+const EmojiPicker = require('emojione-picker');
+const Elm = require('react-elm');
+const { Chat } = require('./Chat');
 
-var EmojiChatRoom = React.createClass({
+const EmojiChatRoom = React.createClass({
 
   render: function() {
-    var flags = 'wss://echo.websocket.org';
+    const flags = 'wss://echo.websocket.org';
 
-    var sendEmojiToChat = function(emoji) {};
+    let sendEmojiToChat = function() {};
 
-    var setupPorts = function(ports) {
+    function setupPorts(ports) {
       sendEmojiToChat = ports.emoji.send;
     };
 
     function handleChange(emoji) {
-      var str = String.fromCodePoint(parseInt("0x" + emoji.unicode));
+      const str = String.fromCodePoint(parseInt("0x" + emoji.unicode));
 
       sendEmojiToChat(str);
     }
