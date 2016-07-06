@@ -36,8 +36,6 @@ function render() {
 
 These flags will be given to the Elm program, allowing you to do some setup work in JS first.
 
-**Note:** Once `flags` has been used to initialize the component, it will never be used again. Changing this property will have no effect. If you want to reinitialize your Elm component, you can add a different `key` to the old and new components so the old one is destroyed and replaced by the new one.
-
 
 ### JavaScript/Elm Interop
 
@@ -65,7 +63,14 @@ function setupPorts(ports) {
 
 In the `setupPorts` function, we first subscribe to the `numActiveTodos` port. Whenever the number of active todos changes, we will run that function and log the number on the console. After that, we send two values through the `todos` port. This will add both of these into the model *and* trigger the `numActiveTodos` callback twice.
 
-**Note:** Once the `ports` function has been used to initialize the component, it will never be used again. Providing a new function does nothing. If you want to change your ports, you should save the `ports` object into your `state` so you can mess with it later.
+
+### Notes
+
+Once the properties are initialized, they will never be used again. Changing `flags` or `ports` will do nothing. So here are two tricks that may help you out:
+
+  - If you want to reinitialize your Elm component, add a different `key` to the old and new components. This way old one is destroyed and replaced by the new one.
+
+  - If you want to change your ports, you should save the `ports` object into your `state` so you can mess with it later.
 
 
 # Example
