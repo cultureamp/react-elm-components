@@ -7,7 +7,9 @@ The emoji picker is an off-the-shelf React component. The chat room is written i
 
   - [`index.jsx`](index.jsx) &mdash; This React code combines the emoji component and the Elm component.
 
-  - [`Chat.elm`](Chat.elm) &mdash; This Elm code defines a simple chat room. For a gradual introduction to how it works, read about [The Elm Architecture](http://guide.elm-lang.org/architecture/) until you get to the section on websockets.
+  - [`Chat.elm`](Chat.elm) &mdash; This Elm code defines a simple chat room.
+
+The rest of the files are to get Elm and JSX and everything working together. You may want to reuse some details of this configuration in your own projects.
 
 
 ## Build Instructions
