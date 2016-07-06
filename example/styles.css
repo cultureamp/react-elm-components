@@ -1,8 +1,11 @@
+body {
+  margin: 0;
+  background-color: #5A6378;
+}
+
 #chat {
-  width: 400px;
-  margin: 40px auto;
-  padding: 100px;
-  background-color: rgb(92, 181, 205);
+  margin: auto;
+  padding: 60px;
 }
 
 .emoji-chat {
