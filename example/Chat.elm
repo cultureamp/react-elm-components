@@ -75,7 +75,7 @@ Again, check out <http://guide.elm-lang.org/architecture> to
 learn more about how this works!
 -}
 update : Msg -> Model -> ( Model, Cmd Msg )
-update msg ({ server, input, message } as model) =
+update msg ({ server, input, messages } as model) =
     case msg of
         Input newInput ->
             ( { model | input = newInput }
