@@ -14,25 +14,25 @@ The rest of the files are to get Elm and JSX and everything working together. Yo
 
 ## Build Instructions
 
-From the `example/` directory, run the following commands:
+Run the following commands:
 
 ```bash
+git clone https://github.com/evancz/react-elm-components.git
+cd react-elm-components/example/
 npm install
 npm run serve
 ```
 
-This should:
-
-  1. Download a bunch of tools.
-  2. Compile `index.jsx` and `Chat.elm` into `build/bundle.js`.
-  3. Open `index.html` in your browser.
+After downloading a bunch of stuff, this should compile `index.jsx` and `Chat.elm` into `build/bundle.js`. Assuming that all succeeds, it should open `index.html` in your browser automatically.
 
 
 ## Alternate Build Instructions
 
-From the `example/` directory, run the following commands:
+Run the following commands:
 
 ```bash
+git clone https://github.com/evancz/react-elm-components.git
+cd react-elm-components/example/
 npm install
 npm run make
 elm-reactor
