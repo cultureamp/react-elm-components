@@ -65,6 +65,15 @@ In the `setupPorts` function, we first subscribe to the `numActiveTodos` port. W
 **Note:** Once the `ports` function has been used to initialize the component, it will never be used again. Providing a new function does nothing. If you want to change your ports, you should save the `ports` object into your `state` so you can mess with it later.
 
 
+## Example
+
+The `example/` directory contains an Emoji Chat Room.
+
+[**Demo**](http://evancz.github.io/react-elm) / [**Code**](example)
+
+The emoji picker is an off-the-shelf React component. The chat room is written in Elm. This example uses flags and ports so you can see all parts of this library in action.
+
+
 ## Elm with other Frameworks
 
 If you want to embed Elm in Angular or Ember or whatever else, you are in luck!
