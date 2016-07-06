@@ -1,7 +1,10 @@
 # Writing React components in Elm
 
-Companies that use [Elm](http://elm-lang.org/) in production usually start by converting a single component. This library makes this strategy as easy as possible.
+Companies that use [Elm](http://elm-lang.org/) in production usually start by converting a single component.
 
+So this library makes it easy to write React components in Elm.
+
+<br>
 
 ## Usage
 
@@ -64,8 +67,9 @@ In the `setupPorts` function, we first subscribe to the `numActiveTodos` port. W
 
 **Note:** Once the `ports` function has been used to initialize the component, it will never be used again. Providing a new function does nothing. If you want to change your ports, you should save the `ports` object into your `state` so you can mess with it later.
 
+<br>
 
-## Example
+# Example
 
 The `example/` directory contains an Emoji Chat Room.
 
@@ -73,8 +77,9 @@ The `example/` directory contains an Emoji Chat Room.
 
 The emoji picker is an off-the-shelf React component. The chat room is written in Elm. This example uses flags and ports so you can see all parts of this library in action.
 
+<br>
 
-## Elm with other Frameworks
+# Elm with other Frameworks
 
 If you want to embed Elm in Angular or Ember or whatever else, you are in luck!
 
