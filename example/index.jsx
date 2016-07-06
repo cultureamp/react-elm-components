@@ -1,8 +1,8 @@
-const React = require('react');
-const ReactDOM = require('react-dom');
-const EmojiPicker = require('emojione-picker');
-const Elm = require('react-elm');
-const { Chat } = require('./Chat');
+import React from 'react'
+import ReactDOM from 'react-dom'
+import EmojiPicker from 'emojione-picker'
+import Elm from 'react-elm'
+import { Chat } from './Chat'
 
 const EmojiChatRoom = React.createClass({
 
