@@ -6,6 +6,12 @@ Companies that use [Elm](http://elm-lang.org/) in production usually start with 
 
 Read more about how to use Elm at work [here](http://elm-lang.org/blog/how-to-use-elm-at-work).
 
+# Example
+
+  - Emoji Chat Room &mdash; [**Demo**](http://evancz.github.io/react-elm) / [**Code**](example)
+
+
+
 # Usage
 
 After you have compiled an Elm program to JavaScript, you can embed it in React like this:
@@ -62,13 +68,6 @@ function setupPorts(ports) {
 ```
 
 In the `setupPorts` function, we first subscribe to the `numActiveTodos` port. Whenever the number of active todos changes, we will run that function and log the number on the console. After that, we send two values through the `todos` port. This will add both of these into the model *and* trigger the `numActiveTodos` callback twice.
-
-
-# Example
-
-[**Demo**](http://evancz.github.io/react-elm) / [**Code**](example)
-
-The `example/` directory contains an Emoji Chat Room. The emoji picker is an off-the-shelf React component. The chat room is written in Elm. This example uses flags and ports so you can see all parts of this library in action.
 
 
 # Angular, Ember, etc.
