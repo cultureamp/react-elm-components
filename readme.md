@@ -1,8 +1,6 @@
-# react-elm
+# Writing React components in Elm
 
-If you want to use [Elm](http://elm-lang.org/) at work, you *must* introduce it gradually. Every company I know of that uses Elm in production started by converting a single component.
-
-This library makes this kind of low-risk exploration super easy!
+Companies that use [Elm](http://elm-lang.org/) in production usually start by converting a single component. This library makes this strategy as easy as possible.
 
 
 ## Usage
@@ -17,8 +15,6 @@ function render() {
 	return <Elm src={Todo} />
 }
 ```
-
-Check out the `example/` directory of this repo to see this in action.
 
 
 ### Flags
@@ -76,8 +72,9 @@ If you want to embed Elm in Angular or Ember or whatever else, you are in luck!
 [The implementation](index.js) is under 20 lines, mostly React-related. The important lines are basically running the following program at the correct time:
 
 ```javascript
+var Elm = require('../dist/elm/todomvc.js');
 var app = Elm.Todo.embed(node, flags);
 setupPorts(app.ports)
 ```
 
-So if you are interested in embedding Elm in something else, do the same trick! You can get more complete docs on embedding Elm in HTML [here](http://guide.elm-lang.org/interop/html.html) and JavaScript interop [here](http://guide.elm-lang.org/interop/javascript.html). Let the community know if you make something cool!
+So if you are interested in embedding Elm in something else, do the same trick! You can get more complete docs on embedding Elm in HTML [here](http://guide.elm-lang.org/interop/html.html) and JavaScript interop [here](http://guide.elm-lang.org/interop/javascript.html). Let the community know if you make something!
