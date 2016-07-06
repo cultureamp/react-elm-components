@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import EmojiPicker from 'emojione-picker'
-import Elm from 'react-elm'
+import Elm from 'react-elm-components'
 import { Chat } from './Chat'
 
 const EmojiChatRoom = React.createClass({

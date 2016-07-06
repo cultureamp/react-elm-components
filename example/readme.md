@@ -1,5 +1,5 @@
 
-# Emoji Chat Room - [Try It!](http://evancz.github.io/react-elm)
+# Emoji Chat Room - [Try It!](http://evancz.github.io/react-elm-components)
 
 This example is a simple chat room that makes it easy to input emoji.
 

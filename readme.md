@@ -8,7 +8,7 @@ Read more about how to use Elm at work [here](http://elm-lang.org/blog/how-to-us
 
 ## Example
 
-  - Emoji Chat Room &mdash; [Demo](http://evancz.github.io/react-elm) / [Code](example)
+  - Emoji Chat Room &mdash; [Demo](http://evancz.github.io/react-elm-components) / [Code](example)
 
 
 
@@ -17,7 +17,7 @@ Read more about how to use Elm at work [here](http://elm-lang.org/blog/how-to-us
 After you have compiled an Elm program to JavaScript, you can embed it in React like this:
 
 ```javascript
-import Elm from 'react-elm'
+import Elm from 'react-elm-components'
 import { Todo } from '../dist/elm/todomvc.js'
 
 function render() {
@@ -31,7 +31,7 @@ function render() {
 Sometimes you want to give your Elm program some **flags** on start up. For example, maybe your `Todo` module needs to get an array of todos. You would write something like this:
 
 ```javascript
-import Elm from 'react-elm'
+import Elm from 'react-elm-components'
 import { Todo } from '../dist/elm/todomvc.js'
 
 function render() {
@@ -50,7 +50,7 @@ As your Elm program gets fancier, you will probably need to interact with JavaSc
 So maybe we extend our `Todo` app to allow outsiders to register new tasks through the `todos` port. And maybe we also expose `numActiveTodos` so that the outsider can know how much work you have left. You would set it up like this:
 
 ```javascript
-import Elm from 'react-elm'
+import Elm from 'react-elm-components'
 import { Todo } from '../dist/elm/todomvc.js'
 
 function render() {

@@ -8,7 +8,7 @@
     "emojione-picker": "^0.3.6",
     "react": "~0.14.0",
     "react-dom": "~0.14.0",
-    "react-elm": ".."
+    "react-elm-components": ".."
   },
   "devDependencies": {
     "babel-cli": "^6.10.1",
