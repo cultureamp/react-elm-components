@@ -70,6 +70,15 @@ function setupPorts(ports) {
 In the `setupPorts` function, we first subscribe to the `numActiveTodos` port. Whenever the number of active todos changes, we will run that function and log the number on the console. After that, we send two values through the `todos` port. This will add both of these into the model *and* trigger the `numActiveTodos` callback twice.
 
 
+## Advanced Usage
+
+Once the Elm component is initialized, changing the `flags` and `ports` properties will do nothing. So here are some tricks that may help you out:
+
+  1. If you want to reinitialize your Elm component, add a different `key` to the old and new components. This way old one is destroyed and replaced by the new one.
+  2. If you want to mess with ports, you can save the `ports` object into your `state` and access it later.
+  3. This package is super simple. Fewer than 20 lines. Check out the implementation and do it different if you want!
+
+
 ## Angular, Ember, etc.
 
 If you want to embed Elm in Angular or Ember or whatever else, you are in luck!
@@ -83,13 +92,3 @@ setupPorts(app.ports)
 ```
 
 So if you are interested in embedding Elm in something else, do the same trick! You can get more complete docs on embedding Elm in HTML [here](http://guide.elm-lang.org/interop/html.html) and JavaScript interop [here](http://guide.elm-lang.org/interop/javascript.html). Let the community know if you make something!
-
-
-## Advanced Usage
-
-Once the Elm component is initialized, changing the `flags` and `ports` properties will do nothing. So here are some tricks that may help you out:
-
-  1. If you want to reinitialize your Elm component, add a different `key` to the old and new components. This way old one is destroyed and replaced by the new one.
-  2. If you want to mess with ports, you can save the `ports` object into your `state` and access it later.
-  3. This package is super simple. Fewer than 20 lines. Check out the implementation and do it different if you want!
-
