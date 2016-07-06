@@ -17,7 +17,7 @@ function render() {
 ```
 
 
-### Flags
+#### Flags
 
 Sometimes you want to give your Elm program some **flags** on start up. For example, maybe your `Todo` module needs to get an array of todos. You would write something like this:
 
@@ -36,7 +36,7 @@ These flags will be given to the Elm program, allowing you to do some setup work
 **Note:** Once `flags` has been used to initialize the component, it will never be used again. Changing this property will have no effect. If you want to reinitialize your Elm component, you can add a different `key` to the old and new components so the old one is destroyed and replaced by the new one.
 
 
-### JavaScript/Elm Interop
+#### JavaScript/Elm Interop
 
 As your Elm program gets fancier, you will probably need to interact with JavaScript. We do this with [**ports**](http://guide.elm-lang.org/interop/javascript.html). Think of these as holes in the side of an Elm program that let you pass messages back-and-forth.
 
