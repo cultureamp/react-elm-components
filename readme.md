@@ -1,7 +1,10 @@
-# Writing React components in Elm
+# Write React components in Elm
 
-Companies that use [Elm](http://elm-lang.org/) in production usually start by converting a single component, so **this package makes it easy to write React components in Elm.** Start with a small experiment. See how you like it. If it is great, do more! If it sucks, do less!
+This package makes it easy to turn Elm code into React components.
 
+Companies that use [Elm](http://elm-lang.org/) in production usually start with a single component. So if you want to use Elm at work, start with a small experiment. Do people think it is nice? Do more! Do people think it sucks? Do less!
+
+Read more about how to use Elm at work [here](http://elm-lang.org/blog/how-to-use-elm-at-work).
 
 # Usage
 
