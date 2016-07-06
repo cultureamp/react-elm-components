@@ -4,9 +4,7 @@ Companies that use [Elm](http://elm-lang.org/) in production usually start by co
 
 So this library makes it easy to write React components in Elm.
 
-<br>
-
-## Usage
+# Usage
 
 After you have compiled an Elm program to JavaScript, you can embed it in React like this:
 
@@ -20,7 +18,7 @@ function render() {
 ```
 
 
-#### Flags
+### Flags
 
 Sometimes you want to give your Elm program some **flags** on start up. For example, maybe your `Todo` module needs to get an array of todos. You would write something like this:
 
@@ -39,7 +37,7 @@ These flags will be given to the Elm program, allowing you to do some setup work
 **Note:** Once `flags` has been used to initialize the component, it will never be used again. Changing this property will have no effect. If you want to reinitialize your Elm component, you can add a different `key` to the old and new components so the old one is destroyed and replaced by the new one.
 
 
-#### JavaScript/Elm Interop
+### JavaScript/Elm Interop
 
 As your Elm program gets fancier, you will probably need to interact with JavaScript. We do this with [**ports**](http://guide.elm-lang.org/interop/javascript.html). Think of these as holes in the side of an Elm program that let you pass messages back-and-forth.
 
@@ -67,19 +65,15 @@ In the `setupPorts` function, we first subscribe to the `numActiveTodos` port. W
 
 **Note:** Once the `ports` function has been used to initialize the component, it will never be used again. Providing a new function does nothing. If you want to change your ports, you should save the `ports` object into your `state` so you can mess with it later.
 
-<br>
 
 # Example
 
-The `example/` directory contains an Emoji Chat Room.
-
 [**Demo**](http://evancz.github.io/react-elm) / [**Code**](example)
 
-The emoji picker is an off-the-shelf React component. The chat room is written in Elm. This example uses flags and ports so you can see all parts of this library in action.
+The `example/` directory contains an Emoji Chat Room. The emoji picker is an off-the-shelf React component. The chat room is written in Elm. This example uses flags and ports so you can see all parts of this library in action.
 
-<br>
 
-# Elm with other Frameworks
+# Angular, Ember, etc.
 
 If you want to embed Elm in Angular or Ember or whatever else, you are in luck!
 
