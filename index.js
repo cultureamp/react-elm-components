@@ -2,6 +2,7 @@ var React = require('react');
 
 module.exports = React.createClass({
 	initialize: function(node) {
+		if (node === null) return;
 		var app = this.props.src.embed(node, this.props.flags);
 
 		if (typeof this.props.ports !== 'undefined') {
