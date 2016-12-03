@@ -1,4 +1,5 @@
 port module Chat exposing (main)
+
 {-| If you are new to Elm, I highly recommend checking out
 this guide:
 
@@ -14,16 +15,14 @@ room very similar to the one here.
 -}
 
 import Html exposing (..)
-import Html.App as App
 import Html.Attributes exposing (..)
 import Html.Events exposing (..)
 import WebSocket as WS
 
 
-
-main : Program String
+main : Program String Model Msg
 main =
-    App.programWithFlags
+    Html.programWithFlags
         { init = init
         , view = view
         , update = update
