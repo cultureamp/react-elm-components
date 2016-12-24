@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "make": "./node_modules/.bin/webpack -d",
-    "serve": "npm run make && ./node_modules/http-server/bin/http-server -o"
+    "serve": "npm run make && ./node_modules/http-server/bin/http-server -o -c-1"
   },
   "dependencies": {
     "emojione-picker": "^0.3.6",
