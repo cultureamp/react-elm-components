@@ -1,20 +1,24 @@
-var React = require('react');
+import React, { Component } from 'react';
 
-module.exports = React.createClass({
-	initialize: function(node) {
-		if (node === null) return;
-		var app = this.props.src.embed(node, this.props.flags);
+export default class ElmComponent extends Component {
+  constructor(props) {
+    super(props);
+    this.initialize = this.initialize.bind(this);
+  }
 
-		if (typeof this.props.ports !== 'undefined') {
-			this.props.ports(app.ports);
-		}
-	},
+  initialize(el) {
+    const { src, flags, ports } = this.props;
+    const app = src.embed(el, flags);
+    if(typeof ports === 'function') {
+      ports(app.ports);
+    }
+  }
 
-	shouldComponentUpdate: function(prevProps) {
-		return false;
-	},
+  shouldComponentUpdate() {
+    return false;
+  }
 
-	render: function () {
-		return React.createElement('div', { ref: this.initialize });
-	}
-});
+  render() {
+    return (<div ref={this.initialize}/>);
+  }
+}

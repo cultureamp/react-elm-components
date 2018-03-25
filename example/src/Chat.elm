@@ -12,6 +12,7 @@ abbreviated read, focus on "The Elm Architecture" chapter.
 
 It introduces key concepts gradually until you get to a chat
 room very similar to the one here.
+
 -}
 
 import Html exposing (..)
@@ -72,6 +73,7 @@ server.
 
 Again, check out <http://guide.elm-lang.org/architecture> to
 learn more about how this works!
+
 -}
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg ({ server, input, messages } as model) =
@@ -109,8 +111,8 @@ port emoji : (String -> msg) -> Sub msg
 
 {-| We subscribe to two kinds of messages.
 
-  1. We want messages from the websocket chat server.
-  2. We want messages sent through emoji port from JavaScript.
+1.  We want messages from the websocket chat server.
+2.  We want messages sent through emoji port from JavaScript.
 
 -}
 subscriptions : Model -> Sub Msg
