@@ -91,5 +91,8 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "elm-webpack-loader": "^4.5.0"
   }
 }
