@@ -1,3 +1,36 @@
+
+
+# Emoji Chat Room - [Try It!](http://evancz.github.io/react-elm-components)
+
+This example is a simple chat room that makes it easy to input emoji.
+
+The emoji picker is an off-the-shelf React component. The chat room is written in Elm. The interesting code lives in the following two files:
+
+  - [`src/App.js`](App.js) &mdash; This React code combines the emoji component and the Elm component.
+
+  - [`src/Chat.elm`](Chat.elm) &mdash; This Elm code defines a simple chat room.
+
+The rest of the files are to get Elm and JSX and everything working together. You may want to reuse some details of this configuration in your own projects.
+
+
+## Build Instructions
+
+Run the following commands:
+
+```bash
+git clone https://github.com/evancz/react-elm-components.git
+cd react-elm-components/example/
+npm install
+npm run start
+```
+
+After downloading a bunch of stuff, this should compile `App.js` and `Chat.elm` into `build/bundle.js`. Assuming that all succeeds, it should open `index.html` in your browser automatically.
+
+
+## Troubleshooting
+
+If any intructions do not work, please ask about it on [the Elm slack](http://elm-lang.org/community)! Folks there are friendly and happy to help. They can troubleshoot the problem and help find any issues with these directions.
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
@@ -300,7 +333,7 @@ In the WebStorm menu `Run` select `Edit Configurations...`. Then click `+` and s
 
 Start your app by running `npm start`, then press `^D` on macOS or `F9` on Windows and Linux or click the green debug icon to start debugging in WebStorm.
 
-The same way you can debug your application in IntelliJ IDEA Ultimate, PhpStorm, PyCharm Pro, and RubyMine. 
+The same way you can debug your application in IntelliJ IDEA Ultimate, PhpStorm, PyCharm Pro, and RubyMine.
 
 ## Formatting Code Automatically
 
@@ -1989,7 +2022,7 @@ If you’re using [Apache HTTP Server](https://httpd.apache.org/), you need to c
     RewriteRule ^ index.html [QSA,L]
 ```
 
-It will get copied to the `build` folder when you run `npm run build`. 
+It will get copied to the `build` folder when you run `npm run build`.
 
 If you’re using [Apache Tomcat](http://tomcat.apache.org/), you need to follow [this Stack Overflow answer](https://stackoverflow.com/a/41249464/4878474).
 
@@ -2419,7 +2452,7 @@ To resolve this:
 1. Open an issue on the dependency's issue tracker and ask that the package be published pre-compiled.
   * Note: Create React App can consume both CommonJS and ES modules. For Node.js compatibility, it is recommended that the main entry point is CommonJS. However, they can optionally provide an ES module entry point with the `module` field in `package.json`. Note that **even if a library provides an ES Modules version, it should still precompile other ES6 features to ES5 if it intends to support older browsers**.
 
-2. Fork the package and publish a corrected version yourself. 
+2. Fork the package and publish a corrected version yourself.
 
 3. If the dependency is small enough, copy it to your `src/` folder and treat it as application code.
 
