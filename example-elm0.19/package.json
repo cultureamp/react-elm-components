@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "scripts": {
+    "make": "./node_modules/.bin/webpack -d",
+    "serve": "npm run make && ./node_modules/http-server/bin/http-server -o -c-1"
+  },
+  "dependencies": {
+    "emojione-picker": "^0.3.6",
+    "react": "~0.14.0",
+    "react-dom": "~0.14.0",
+    "react-elm-components": ".."
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babel-plugin-uglify": "^1.0.2",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "elm-webpack-loader": "^5.0.0",
+    "http-server": "^0.9.0",
+    "uglify-js": "^2.6.4",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}

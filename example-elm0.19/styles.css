@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  background-color: #5a6378;
+}
+
+.time-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-container h1 {
+  margin: 0;
+  font-size: 10vh;
+  color: white;
+}
+
+.time-container h2 {
+  margin: 0;
+  font-style: italic;
+  font-size: 3vh;
+  font-weight: 200;
+  color: white;
+}
