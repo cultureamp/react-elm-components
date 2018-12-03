@@ -18,7 +18,7 @@ Run the following commands:
 
 ```bash
 git clone https://github.com/evancz/react-elm-components.git
-cd react-elm-components/example/
+cd react-elm-components/example-elm0.18/
 npm install
 npm run serve
 ```
@@ -32,7 +32,7 @@ Run the following commands:
 
 ```bash
 git clone https://github.com/evancz/react-elm-components.git
-cd react-elm-components/example/
+cd react-elm-components/example-elm0.18/
 npm install
 npm run make
 elm-reactor
