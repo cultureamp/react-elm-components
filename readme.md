@@ -92,3 +92,8 @@ setupPorts(app.ports)
 ```
 
 So if you are interested in embedding Elm in something else, do the same trick! You can get more complete docs on embedding Elm in HTML [here](http://guide.elm-lang.org/interop/html.html) and JavaScript interop [here](http://guide.elm-lang.org/interop/javascript.html). Let the community know if you make something!
+
+
+---
+
+react-elm-components is maintained by the Front End Capability Team at Culture Amp.
