@@ -9,8 +9,8 @@ metadata:
     - camp-foundations
     - data-none
   annotations:
-    github.com/project-slug: react-elm-components
-    github.com/team-slug: front-end-foundations
+    github.com/project-slug: cultureamp/react-elm-components
+    github.com/team-slug: cultureamp/front-end-foundations
 spec:
   type: library
   owner: front-end-foundations
