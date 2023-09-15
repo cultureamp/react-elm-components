@@ -2,16 +2,16 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: react-elm-components
-  description: >
+  description: |
     react-elm-components makes it easy to turn Elm code into React components.
   tags:
-    - users-na
-    - camp-foundations
+    - camp-developer-experience
     - data-none
+    - users-na
   annotations:
     github.com/project-slug: cultureamp/react-elm-components
-    github.com/team-slug: cultureamp/front-end-foundations
+    github.com/team-slug: cultureamp/delivery-engineering
 spec:
   type: library
-  owner: front-end-foundations
+  owner: delivery-engineering
   lifecycle: production
