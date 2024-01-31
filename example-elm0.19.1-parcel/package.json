@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "buildelm": "elm make --output=Time.js src/Main.elm",
+    "start": "parcel ./index.html",
+    "build": "rm -rf dist && parcel build --public-url / ./index.html",
+    "watch": "parcel watch --public-url / ./index.html"
+  },
+  "dependencies": {
+    "emojione-picker": "^2.2.2",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-elm-components": "^1.1.0"
+  },
+  "devDependencies": {
+    "elm-hot": "^1.1.3",
+    "node-elm-compiler": "^5.0.4",
+    "parcel-bundler": "^1.12.4"
+  }
+}
