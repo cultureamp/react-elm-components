@@ -9,8 +9,7 @@ Read more about how to use Elm at work [here](http://elm-lang.org/blog/how-to-us
 ## Example
 
   - Emoji Chat Room &mdash; [Demo](http://evancz.github.io/react-elm-components) / [Code](example)
-
-
+  - Basic example https://github.com/kirkstrobeck/elm-in-react
 
 ## Usage
 
