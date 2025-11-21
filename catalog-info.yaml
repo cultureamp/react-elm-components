@@ -10,8 +10,8 @@ metadata:
     - users-na
   annotations:
     github.com/project-slug: cultureamp/react-elm-components
-    github.com/team-slug: cultureamp/delivery-engineering
+    github.com/team-slug: cultureamp/developer-experience
 spec:
   type: library
-  owner: delivery-engineering
+  owner: developer-experience
   lifecycle: production
